@@ -1,1 +1,8 @@
+[Unit]
+Description=Hibernate the machine when battery is critically low
 
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/battery_hibernate.sh
+StandardOutput=null
+StandardError=null

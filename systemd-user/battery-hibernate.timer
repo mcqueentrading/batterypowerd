@@ -1,0 +1,11 @@
+[Unit]
+Description=Run battery-hibernate.service every 5 minutes
+
+[Timer]
+OnUnitActiveSec=5min
+OnBootSec=1min
+Unit=battery-hibernate.service
+Persistent=true
+
+[Install]
+WantedBy=default.target
